@@ -1,0 +1,68 @@
+@*
+ * This template is called from the `index` template. This template
+ * handles the rendering of the page header and body tags. It takes
+ * two arguments, a `String` for the title of the page and an `Html`
+ * object to insert into the body of the page.
+ *@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @* Here's where we render the page title `String`. *@
+        <title>@title</title>
+        <meta charset="utf-8"/>
+       
+        <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+        
+        <script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+		p {
+				font-family: "Brush Script MT", cursive;
+		}
+
+	</style>   
+    </head>
+    <body>
+        <div class="container">
+
+        <div class="top">
+		<p>Beaches.ie</p>
+			<ul>
+				<li><a href="https://goo.gl/OPBv0C"><img src="https://goo.gl/3Ib9xA"></a></li>
+				<li><a href="https://goo.gl/GFF0Bq"><img src="https://goo.gl/XlGYuw"></a></li>
+				<li><a href="https://goo.gl/reCFZX"><img src="https://goo.gl/u8ZMFW"></a></li>
+			</ul>
+		</div>
+
+        <div class="nav">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<ul class="nav navbar-nav">
+						<li><a href="@routes.HomeController.index()">Home</a></li>
+						<li><a href="/irishBeaches">Irish Beaches</a></li>
+						<li><a href="/otherResorts">Other Resorts</a></li>
+						<li><a href="/aboutUs">About Us</a></li>
+						
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+        @* And here's where we render the `Html` object containing
+         * the page content. *@
+        @content
+
+        <div class="footer">
+			<p>&copy; 2016 Beaches</p>
+			<ul>
+				<li><a href="https://goo.gl/OPBv0C"><img src="https://goo.gl/3Ib9xA"></a></li>
+				<li><a href="https://goo.gl/GFF0Bq"><img src="https://goo.gl/XlGYuw"></a></li>
+				<li><a href="https://goo.gl/reCFZX"><img src="https://goo.gl/u8ZMFW"></a></li>
+			</ul>
+		</div>
+        </div>
+    </body>
+</html>

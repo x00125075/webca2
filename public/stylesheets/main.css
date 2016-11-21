@@ -1,0 +1,146 @@
+
+
+.container{
+	padding:0.5em;
+}
+.top {
+	padding-top:0.5em;
+	padding-bottom:4em;
+	
+}
+.top ul {
+	list-style: none;
+	display:flex;
+	float:right;
+}
+.top li {
+	padding: 0 5px;
+	width: 100%;
+    width: 32px;
+    height: 32px;
+}
+.top p{
+  font-family: 'Great Vibes', Helvetica, sans-serif;
+	float:left;
+	color:#138EC7;
+	font-size:2em;
+}
+
+.navbar-default{
+    background-color: #ffffff;
+    border-color: #A6BEDA;
+	display:flex;
+	float:center;
+	
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #138EC7;
+}
+
+
+.jumbotronIndex {
+	clear:both;
+  display: flex;
+  align-items: center;
+	background-image:url("https://goo.gl/DcmNfq");
+	background-size: cover;
+  color: #ffffff;
+  height: 550px;
+  text-shadow: 0.7px 0.7px 0.7px #000000;
+    border-radius: 5px;
+}
+.jumbotronIndex h2{
+	font-family: 'Great Vibes', Helvetica, sans-serif;
+	font-size: 10em;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+	
+}
+.jumbotronAbout {
+	clear:both;
+  display: flex;
+  align-items: center;
+	background-image: url("http://bit.ly/2fklzsm");
+	background-size: cover;
+  color: #ffffff;
+  height: 550px;
+  text-shadow: 0.7px 0.7px 0.7px #000000;
+   border-radius: 5px;
+}
+.jumbotronAbout h2{
+	
+	font-family: 'Great Vibes', Helvetica, sans-serif;
+	font-size: 10em;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+	
+}
+.jumbotronIrishBeaches{
+	clear:both;
+  display: flex;
+  align-items: center;
+	background-image: url("http://bit.ly/2fDnts2");
+	background-size: cover;
+  color: #ffffff;
+  height: 550px;
+  text-shadow: 0.7px 0.7px 0.7px #000000;
+  border-radius: 5px;
+}
+.jumbotronIrishBeaches h2{
+	
+	font-family: 'Great Vibes', Helvetica, sans-serif;
+	font-size: 10em;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+	
+}
+.jumbotronOtherResorts{
+	clear:both;
+  display: flex;
+  align-items: center;
+	background-image: url("http://bit.ly/2eHOGF2");
+	background-size: cover;
+  color: #ffffff;
+  height: 550px;
+  text-shadow: 0.7px 0.7px 0.7px #000000;
+  border-radius: 5px;
+}
+.jumbotronOtherResorts h2{
+	
+	font-family: 'Great Vibes', Helvetica, sans-serif;
+	font-size: 10em;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+	
+}
+.row h1{
+	font-family: 'Great Vibes', Helvetica, sans-serif;
+	font-size:2em;
+}
+.col-md-4 {
+	padding-bottom:2em;
+}
+
+.footer p {
+	font-size: 12px;
+	float:left;
+}
+.footer ul {
+	list-style: none;
+	float:right;
+	display: flex;
+}
+.footer li {
+	padding: 0 5px;
+  margin: 1px;
+  width: 100%;
+  width: 32px;
+  height: 32px;
+}
