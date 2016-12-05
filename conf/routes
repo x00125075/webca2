@@ -11,6 +11,35 @@ GET     /otherResorts               controllers.HomeController.otherResorts
 
 GET     /aboutUs                    controllers.HomeController.aboutUs
 
+GET     /addReview                  controllers.HomeController.addReview
+
+POST     /addReviewSubmit           controllers.HomeController.addReviewSubmit
+
+GET     /inchydoney                 controllers.HomeController.inchydoney
+GET     /derrynane                  controllers.HomeController.derrynane
+GET     /curracloe                  controllers.HomeController.curracloe
+GET     /inch                       controllers.HomeController.inch
+GET     /bannastrand                controllers.HomeController.bannastrand
+GET     /kilmurvey                  controllers.HomeController.kilmurvey
+GET     /fanore                     controllers.HomeController.fanore
+GET     /traban                     controllers.HomeController.traban
+GET     /dogsbay                    controllers.HomeController.dogsbay
+GET     /keembay                    controllers.HomeController.keembay
+GET     /coumeenole                 controllers.HomeController.coumeenole
+GET     /skerries                   controllers.HomeController.skerries
+GET     /sharmelsheikh              controllers.HomeController.sharmelsheikh
+GET     /cancun                     controllers.HomeController.cancun
+GET     /barbados                   controllers.HomeController.barbados
+GET     /maldives                   controllers.HomeController.maldives
+GET     /dominican                  controllers.HomeController.dominican
+GET     /bali                       controllers.HomeController.bali
+GET     /polynesia                  controllers.HomeController.polynesia
+GET     /borabora                   controllers.HomeController.borabora
+GET     /porquerolles               controllers.HomeController.porquerolles
+GET     /greece                     controllers.HomeController.greece
+GET     /dalmatia                   controllers.HomeController.dalmatia
+GET     /mallorca                   controllers.HomeController.mallorca
+
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code

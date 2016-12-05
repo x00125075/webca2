@@ -1,0 +1,22 @@
+@import helper._
+
+@(addReviewForm: Form[models.Review])
+
+@main("Add Review") {
+
+	<h3>Add a new Review</h3>
+
+	@form(action = routes.HomeController.addReviewSubmit(), 'class -> "form-horizontal", 'role->"form") {
+	
+		@inputText(addReviewForm("name"), '_label -> "Name",'class -> "form-control")
+		@inputText(addReviewForm("review"), '_label -> "Review",'class -> "form-control")
+		
+	<div class="actions">
+		<input type="submit" value="Add Review" class="btn btn-warning">
+			<a href="@routes.HomeController.index()"
+				<button class="btn btn-warning">Cancel</button>
+			</a>
+	</div>
+	}
+
+}
