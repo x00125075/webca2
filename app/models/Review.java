@@ -1,7 +1,7 @@
 package models;
 
 import java.util.*;
-import javax.persistance.*;
+
 
 import play.data.format.*;
 import play.data.validation.*;
@@ -9,9 +9,8 @@ import play.data.validation.*;
 import com.avaje.ebean.*;
 
 @Entity
-public class Product extends Model{
 
-public class Review {
+public class Review extends Model{
 
     @Id
     private Long id;
@@ -27,6 +26,12 @@ public class Review {
         this.id = id;
         this.name = name;
         this.review = review;
+    }
+
+    public static Finder<Long,Review> find = new Finder<Long,Review>(Review.class);
+
+    public static List<Product> findAll() {
+        return Product.find.all();
     }
 
     public Long getID(){
@@ -53,5 +58,5 @@ public class Review {
         this.review = review;
     }
 
-}
+
 }

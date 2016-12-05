@@ -1,6 +1,6 @@
-@(message: String)
+@(reviews: List[models.Review])
 
-@main("Beaches.ie") {
+@main("Review") {
 
 <!DOCTYPE html>
 <html>
@@ -27,6 +27,14 @@
 
   <tbody>
 
+    @for(p <- reviews){
+      
+      <tr>
+          <td class="numeric">@p.getID</td>
+          <td>@p.getName</td>
+          <td>@p.getReview</td>
+      </tr>
+      }
 
 
 
